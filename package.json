@@ -1,0 +1,30 @@
+{
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "request": "^2.88.2"
+  },
+  "name": "movie_app",
+  "version": "1.0.0",
+  "description": "simple restApi consumer from Tmdb",
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RonitKumar09/movie_app.git"
+  },
+  "keywords": [
+    "movie_app",
+    "movieFetch"
+  ],
+  "author": "Ronit",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RonitKumar09/movie_app/issues"
+  },
+  "homepage": "https://github.com/RonitKumar09/movie_app#readme"
+}

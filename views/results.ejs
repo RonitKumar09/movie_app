@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Search Results</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="/stylesheets/design.css">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id="searchHeading">Search Result for <span style="color:gray;"> > </span> <%= query %></h1>
+        <% data.results.forEach((movie)=>{ %>
+        <div class="card mb-5 w-75">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="https://image.tmdb.org/t/p/w600_and_h900_bestv2/<%=movie['poster_path']%>" class="rounded-top card-img img-fluid"/>
+                </div>
+
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title"><%= movie["original_title"]%></h2>
+                        <hr>
+                        <br>
+                        <p class="card-text"><%= movie["overview"]%></p>
+                        <hr>
+                        <p class="card-text"><b>Date Published:</b><span><%= movie["release_date"]%></span></p>
+                        <p class="card-text"><b>Total Votes:</b><span><%= movie["vote_count"]%></span></p>
+                        <p class="card-text"><b>Average Rating:</b><span><%= movie["popularity"]%></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%})%>
+    </body>
+</html>
