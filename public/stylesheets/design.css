@@ -1,8 +1,8 @@
-body{
+body {
     background-color: bisque;
 }
 
-div{
+div {
     background-color: whitesmoke;
 }
 
@@ -10,11 +10,18 @@ div{
     font-family: Lato;
 }
 
-.card{
-    margin-left: 12.5%;
+.card-body {
+    height: 100%;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
 }
-.card-img{
-    height: 24rem;
+
+.card {
+    margin-left: 12.5%;
+    box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card-img {
+    height: 100%;
     border-style: groove;
     border-width: 4px;
 }
